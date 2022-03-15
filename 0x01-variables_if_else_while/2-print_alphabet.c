@@ -12,9 +12,10 @@
 int main(void)
 {
 	int n;
-	int lower_n = tolower(n);
 	for (n = 'A'; n <= 'Z'; n++)
 	{
+
+	        int lower_n = tolower(n);
 		putchar(lower_n);
 	}
 	return (0);
