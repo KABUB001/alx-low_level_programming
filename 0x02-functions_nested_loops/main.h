@@ -29,7 +29,7 @@ void print_alphabet(void)
 	char ch;
 	for (ch='a'; ch <= 'z'; ch++)
 	{
-		_putchar(ch);
+		return (write(1,ch "\n"));
 	}	
 
 
