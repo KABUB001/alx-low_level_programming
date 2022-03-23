@@ -15,7 +15,7 @@ int main(void)
 	for (n = 'A'; n <= 'Z'; n++)
 	{
 
-	        int lower_n = tolower(n);
+	        int lower_n = islower(n);
 		putchar(lower_n);
 	}
 	return (0);
