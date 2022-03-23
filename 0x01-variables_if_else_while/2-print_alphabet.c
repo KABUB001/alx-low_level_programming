@@ -12,11 +12,10 @@
 int main(void)
 {
 	int n;
-	for (n = 'A'; n <= 'Z'; n++)
+	for (n = 'a'; n <= 'z'; n++)
 	{
 
-	        int lower_n = islower(n);
-		putchar(lower_n);
+		putchar(n);
 	}
 	return (0);
 }
