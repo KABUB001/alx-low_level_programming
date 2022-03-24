@@ -17,6 +17,13 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+/**
+ *
+ *
+ *
+ *
+ */
+
 
 /**
  *
@@ -24,13 +31,15 @@ int _putchar(char c)
  *
  *
  */
-void print_alphabet(void)
+void print_alphabet()
 {
 	char ch;
 	for (ch='a'; ch <= 'z'; ch++)
 	{
-		write(1,&ch"\n",2);
+		_putchar(ch);		
 	}	
+	_putchar('\n');
+	
 
 
 }
