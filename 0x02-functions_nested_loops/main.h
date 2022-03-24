@@ -39,7 +39,7 @@ void print_alphabet()
 		putchar(ch);		
 	}	
 	putchar('\n');
-	
+	return (0);
 
 
 }
