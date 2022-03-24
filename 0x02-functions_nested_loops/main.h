@@ -31,7 +31,7 @@
  *
  *
  */
-void print_alphabet()
+int print_alphabet()
 {
 	char ch;
 	for (ch='a'; ch <= 'z'; ch++)
