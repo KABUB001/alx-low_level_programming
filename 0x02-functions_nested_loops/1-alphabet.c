@@ -4,7 +4,7 @@
  *
  * Return: Always 0
  */
-void printf_alphabet(void)
+int print_alphabet(void)
 {
 	char ch;
 	for (ch='a'; ch <= 'z'; ch++)
