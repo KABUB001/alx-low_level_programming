@@ -2,7 +2,7 @@
 /**
  * print_alphabet_x10 - prints alphabet 10 times
  *
- * Retuen: Nothing
+ * Return: Nothing
  */
 void print_alphabet_x10(void)
 {
@@ -10,6 +10,6 @@ void print_alphabet_x10(void)
 
 	for (a = 1; a <= 10; a++)
 	{
-		 print_alphabet();
+		 print_alphabet(void);
 	}
 }
