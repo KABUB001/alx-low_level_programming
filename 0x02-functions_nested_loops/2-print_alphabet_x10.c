@@ -4,12 +4,13 @@
  *
  * Return: Nothing
  */
+void print_alphabet(void);
 void print_alphabet_x10(void)
 {
 	int a;
 
 	for (a = 1; a <= 10; a++)
 	{
-		 print_alphabet(void);
+		 print_alphabet();
 	}
 }
