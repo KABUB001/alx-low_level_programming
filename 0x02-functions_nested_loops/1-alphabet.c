@@ -2,9 +2,9 @@
 /**
  * print_alphabet - prints alphabet a to z
  *
- * Return: Always 0
+ * Return: nothing
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	char ch;
 
@@ -14,6 +14,5 @@ int print_alphabet(void)
 	}
 
 	_putchar('\n');
-	return (0);
 
 }
