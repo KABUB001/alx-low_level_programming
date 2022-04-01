@@ -4,8 +4,15 @@
  *
  * Return: Always 0
  */
-int main(void)
+int printf_alphabet()
 {
-	printf_alphabet();
+	char ch;
+	for (ch='a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);		
+	}	
+	putchar('\n');
 	return (0);
+
+
 }
