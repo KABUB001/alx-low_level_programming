@@ -1,41 +1,35 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function goes there */
+#include <stdlib.h>
 /**
- * main - print combination of three digits
+ * main - print a combination of three digits
  *
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int a = 0;
-	int b = 1;
-	int c = 2;
-	while (a <= 7)
+	int i;
+	int j;
+	int k;
+
+	for (i = 0; i <= 7; i++)
 	{
-		while (b <= 8)
+		for (j = i + 1; j <= 8; j++)
 		{
-			while (c <= 9)
+			for (k = j + 1; k <= 9; k++)
 			{
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(c + '0');
-				if (a < 7)
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				
+				if (i != 7)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				c++;
 			}
-			b++;
-			c = b + 1;
 		}
-		a++;
-		b = a + 1;
 	}
+
 	putchar('\n');
 	return (0);
 }
