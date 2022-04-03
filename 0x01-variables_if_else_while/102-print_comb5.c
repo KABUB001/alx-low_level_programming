@@ -19,15 +19,19 @@ int main(void)
 		{
 			for (c = a; c <= 9; c++)
 			{
-				for (d = b + 1; d <= 9; d++)
+				for (d = (a == c) ? (b + 1) : 0; d <= 9; d++)
 				{
 					putchar(a + '0');
 					putchar(b + '0');
 					putchar(' ');
 					putchar(c + '0');
 					putchar(d + '0');
-				        putchar(',');
-					putchar(' ');
+					
+					if (!(a == 9 && b == 8 && c == 9))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
