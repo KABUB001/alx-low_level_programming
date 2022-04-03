@@ -8,14 +8,14 @@ void times_table(void)
 {
 	int x;
 	int y;
-	int r = x * y;
-	int a = r / 10;
-	int b = r % 10;
 
 	for (x = 0; x <= 9; x++)
 	{
 		for (y = 0; y <= 9; y++)
 		{
+			int r = x * y;
+			int a = r / 10;
+
 			if (y != 0)
 			{
 				if (a != 0)
@@ -37,6 +37,8 @@ void times_table(void)
 			}
 			else
 			{
+				int b = r % 10;
+
 				_putchar(a + '0');
 				_putchar(b + '0');
 			}
