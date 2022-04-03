@@ -25,7 +25,5 @@ int main(void)
 		d += y * 5;
 	}
 
-	int res = c + d;
-
-	printf("%d", res);
+	printf("%d", c + d);
 }
