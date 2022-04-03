@@ -6,10 +6,8 @@
  *
  * Return: n if n is greater than 0, -n otherwise
  */
-int _abs(int)
+int _abs(int n)
 {
-	int n;
-
 	if (n > 0)
 		return (n);
 	else
