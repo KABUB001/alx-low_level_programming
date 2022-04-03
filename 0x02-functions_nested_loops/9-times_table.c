@@ -17,26 +17,32 @@ void times_table(void)
 		for (y = 0; y <= 9; y++)
 		{
 			r = x * y;
+			a = r / 10;
+			b = r % 10;
 
-			if ( (r / 10) == 0)
+			if (a != 0)
 			{
-				_putchar(r + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
+			else if (y == 0)
 			else
-			{
-				a = r / 10;
-				b = r % 10;
-
-				_putchar(a + '0');
-				_putchar(b + '0');
-			}
-
-			if (y != 9)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 			}
+
+			if ((r / 10) == 0)
+			{
+				_putchar(r + '0');
+			}
+			else
+			{
+				_putchar(a + '0');
+				_putchar(b + '0');
+			}
+
 		}
 
 		_putchar('\n');
