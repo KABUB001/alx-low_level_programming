@@ -13,8 +13,12 @@ int print_last_digit(int x)
 	{
 		_putchar(c + '0');
 		return (c);
-	}
-				
+	}			
 	else
-		return (-c);
+	{
+		c = -c;
+
+		_putchar(c + '0');
+		return (c);
+	}
 }
