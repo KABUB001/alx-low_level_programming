@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * print_last_digit - returns the last digit of an entered number
- *
- * 
+ * @x: value to test
+ * @c: last digit
  * Return: the last digit
  */
 int print_last_digit(int x)
@@ -13,7 +13,8 @@ int print_last_digit(int x)
 	{
 		_putchar(c + '0');
 		return (c);
-	}			
+	}
+
 	else
 	{
 		c = -c;
