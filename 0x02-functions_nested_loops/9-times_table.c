@@ -18,19 +18,21 @@ void times_table(void)
 		{
 			r = x * y;
 			a = r / 10;
-			b = r % 10;
 
-			if (a != 0)
+			if (y != 0)
 			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			else if (y == 0)
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				if (a != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+			
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 
 			if ((r / 10) == 0)
@@ -39,6 +41,8 @@ void times_table(void)
 			}
 			else
 			{
+				b = r % 10;
+
 				_putchar(a + '0');
 				_putchar(b + '0');
 			}
