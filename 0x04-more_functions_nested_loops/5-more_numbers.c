@@ -4,7 +4,7 @@
  *
  * Return: Nothing
  */
-void more_numbers(void);
+void more_numbers(void)
 {
 	int m;
 	int n;
